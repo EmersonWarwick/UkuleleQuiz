@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Ukulele Quiz with Pete Williams">
+    <meta name="keywords" content="Learn, Ukulele, Quiz, Pete Williams">
+    <meta name="author" content="Emerson Warwick Limited">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pete Williams Ukulele Quiz</title>
+    <link rel="icon" href="favicon.ico?v=1" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico?v=1" type="image/x-icon">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="site.css">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="jumbotron">
+            <img style="width:100%" src="/images/PetesUkuleleQuizLogo2.png" />
+        </div>
+        <div class="row">
+            <div class="col-md-6 center">
+                <h2>Score</h2>
+            </div>
+            <div class="col-md-6 center">
+                <h2 id="score">-</h2>
+                <p id="retries"></p>
+            </div>
+        </div>
+        <hr />
+
+        <div class="row chordrow">
+            <div class="col-md-12 center">
+                <p>Which Chord is this?</p>
+            </div>
+        </div>
+        <div class="row chordrow">
+            <div class="col-md-12 center">
+                <img id="chordImage" src="/images/A.png" />
+            </div>
+        </div>
+        <div class="row buttonrow">
+            <div class="col-md-12 center">
+                <p id="message">Choose either:</p>
+            </div>
+        </div>
+        <div class="row buttonrow">
+                <div class="col-md-4 center">
+                    <input id="button1" class="ui-button" style="font-weight: bold;" type="submit" value="A">
+                </div>
+                <div class="col-md-4 center">
+                    <input id="button2" class="ui-button" style="font-weight: bold;" type="submit" value="B7">
+                </div>
+                <div class="col-md-4 center">
+                    <input id="button3" class="ui-button" style="font-weight: bold;" type="submit" value="C">
+                </div>
+        </div>
+        <div class="row welldonebuttonrow">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 center">
+                <input id="welldonebutton" class="ui-button" type="submit" value="Well Done !">
+                <p>Did you notice the first 6 chords were in the <em>Circle of 5ths</em>?</p>
+                <p>Click green button to reset</p>
+            </div>
+            <div class="col-md-4">
+            </div>
+    </div>
+        
+
+        <hr />
+        <footer class="footer">
+            <p>&copy; 2022 Pete Williams Music .com</p>
+            <p>This does not record any personal data.</p>
+            <p><a href="https://ukulele.contact/privacy-policy/">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" 
+    integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="quiz.js?v=6"></script>
+</body>
+
+</html>
